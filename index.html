@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="index.html">ShopEasy</a>
+            <div class="nav-links">
+                <a class="nav-link current" href="index.html">Home</a>
+                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+                <button id="themeButton" class="theme-button" type="button">Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <div class="welcome-text">
+                <p class="small-heading">WELCOME TO SHOPEASY</p>
+                <h1>Shopping made simple.</h1>
+                <p>Find useful everyday products at simple prices. Search our products, add your favourites to the cart, and try the checkout form.</p>
+                <a class="primary-link" href="products.html">See all products</a>
+            </div>
+            <div class="welcome-picture" aria-label="Shopping bag illustration" role="img">🛍️</div>
+        </section>
+
+        <section class="page-section">
+            <div class="section-heading">
+                <div>
+                    <p class="small-heading">OUR PICKS</p>
+                    <h2>Featured Products</h2>
+                </div>
+                <a href="products.html">View all products →</a>
+            </div>
+            <p id="loadMessage" class="status-message" aria-live="polite">Loading products...</p>
+            <div id="featuredProducts" class="product-grid"></div>
+        </section>
+
+        <section class="page-section faq-section">
+            <p class="small-heading">NEED HELP?</p>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question" type="button">How can I add a product to my cart? <span>+</span></button>
+                <p class="faq-answer">Open the Products page and press the Add to Cart button on an available product.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">Can I change the quantity? <span>+</span></button>
+                <p class="faq-answer">Yes. On the Cart page, use the plus and minus buttons. You can also remove a product.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">Is this a real online store? <span>+</span></button>
+                <p class="faq-answer">No. This is a student project. It works in your browser and does not send orders to a server.</p>
+            </div>
+        </section>
+        <p id="cartMessage" class="toast-message" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 ShopEasy — Web Engineering Assignment 2</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

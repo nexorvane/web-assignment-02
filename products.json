@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Laptop", "price": 120000, "category": "electronics", "rating": 4.6, "inStock": true, "image": "images/laptop.svg" },
+  { "id": 2, "name": "Headphones", "price": 8000, "category": "electronics", "rating": 4.4, "inStock": true, "image": "images/headphones.svg" },
+  { "id": 3, "name": "Smartphone", "price": 65000, "category": "electronics", "rating": 4.7, "inStock": true, "image": "images/smartphone.svg" },
+  { "id": 4, "name": "Smart Watch", "price": 15000, "category": "electronics", "rating": 4.2, "inStock": false, "image": "images/smartwatch.svg" },
+  { "id": 5, "name": "Keyboard", "price": 4500, "category": "electronics", "rating": 4.3, "inStock": true, "image": "images/keyboard.svg" },
+  { "id": 6, "name": "Mouse", "price": 2500, "category": "electronics", "rating": 4.1, "inStock": true, "image": "images/mouse.svg" },
+  { "id": 7, "name": "Backpack", "price": 4000, "category": "accessories", "rating": 4.5, "inStock": true, "image": "images/backpack.svg" },
+  { "id": 8, "name": "Notebook", "price": 500, "category": "stationery", "rating": 4.0, "inStock": true, "image": "images/notebook.svg" },
+  { "id": 9, "name": "Water Bottle", "price": 1200, "category": "accessories", "rating": 4.2, "inStock": true, "image": "images/bottle.svg" },
+  { "id": 10, "name": "Desk Lamp", "price": 3000, "category": "electronics", "rating": 4.3, "inStock": true, "image": "images/lamp.svg" }
+]

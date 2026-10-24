@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy | Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="index.html">ShopEasy</a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link current" href="products.html">Products</a>
+                <a class="nav-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+                <button id="themeButton" class="theme-button" type="button">Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-section">
+        <section class="page-title-section">
+            <p class="small-heading">TAKE A LOOK</p>
+            <h1>Our Products</h1>
+            <p>Search, choose a category, or sort products by price.</p>
+        </section>
+
+        <section class="filter-section" aria-label="Product filters">
+            <div class="filter-field search-field">
+                <label for="searchInput">Search by name</label>
+                <input id="searchInput" type="search" placeholder="For example, laptop">
+            </div>
+            <div class="filter-field">
+                <label for="categoryFilter">Category</label>
+                <select id="categoryFilter">
+                    <option value="all">All categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="stationery">Stationery</option>
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="sortFilter">Sort by price</label>
+                <select id="sortFilter">
+                    <option value="none">Default order</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <p id="loadMessage" class="status-message" aria-live="polite">Loading products...</p>
+        <section id="productGrid" class="product-grid" aria-label="Product list"></section>
+        <p id="cartMessage" class="toast-message" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 ShopEasy — Web Engineering Assignment 2</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
